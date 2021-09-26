@@ -91,4 +91,8 @@ Here's a [link to my video result](test_video_output.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+Hyperparameters could be improper for some scenarios (camera position, environment etc). Machine/Deep learning based lane finding algorithms could be a better option. 
+Roads with sharp turnings could be hard for this method to handle. Also, if there is a dead end street, algorithm will segment wall, construct etc as lane. Since, minmix is lower than proper value and algorithm adds windows based on previous position.
+
+Maybe, there can be other performance based improvements if we want this algorithm to work real time. Only end parts of the lines could be calculated
+as we can cache previous nonzero values.
